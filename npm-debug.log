@@ -1,0 +1,50 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/limi/.nvm/versions/node/v6.9.2/bin/node',
+1 verbose cli   '/Users/limi/.nvm/versions/node/v6.9.2/bin/npm',
+1 verbose cli   'version',
+1 verbose cli   '1.0.12',
+1 verbose cli   '--force' ]
+2 info using npm@3.10.9
+3 info using node@v6.9.2
+4 warn using --force I sure hope you know what you are doing.
+5 info git [ 'status', '--porcelain' ]
+6 info lifecycle test@1.0.12~preversion: test@1.0.12
+7 silly lifecycle test@1.0.12~preversion: no script for preversion, continuing
+8 verbose version.write data { name: 'test',
+8 verbose version.write   version: '1.0.12',
+8 verbose version.write   description: '',
+8 verbose version.write   main: 'index.js',
+8 verbose version.write   scripts: { test: 'echo "Error: no test specified" ' },
+8 verbose version.write   repository:
+8 verbose version.write    { type: 'git',
+8 verbose version.write      url: 'git+https://github.com/limichange/test.git' },
+8 verbose version.write   author: '',
+8 verbose version.write   license: 'ISC',
+8 verbose version.write   bugs: { url: 'https://github.com/limichange/test/issues' },
+8 verbose version.write   homepage: 'https://github.com/limichange/test#readme' } to package.json
+9 info lifecycle test@1.0.12~version: test@1.0.12
+10 silly lifecycle test@1.0.12~version: no script for version, continuing
+11 info git [ 'add', '/Users/limi/testCode/versiontest/test/package.json' ]
+12 info git [ 'commit', '-m', '1.0.12' ]
+13 info git [ 'tag', 'v1.0.12', '-sm', '1.0.12' ]
+14 verbose stack Error: Command failed: git tag v1.0.12 -sm 1.0.12
+14 verbose stack error: gpg failed to sign the data
+14 verbose stack error: unable to sign the tag
+14 verbose stack
+14 verbose stack     at ChildProcess.exithandler (child_process.js:206:12)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose cwd /Users/limi/testCode/versiontest/test
+16 error Darwin 16.3.0
+17 error argv "/Users/limi/.nvm/versions/node/v6.9.2/bin/node" "/Users/limi/.nvm/versions/node/v6.9.2/bin/npm" "version" "1.0.12" "--force"
+18 error node v6.9.2
+19 error npm  v3.10.9
+20 error code 128
+21 error Command failed: git tag v1.0.12 -sm 1.0.12
+21 error error: gpg failed to sign the data
+21 error error: unable to sign the tag
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]
